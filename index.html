@@ -2,37 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Документ</title>
+  <title>Документ на весь экран</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      height: 100%;
+      background-color: #f0f0f0;
+    }
+
+    .fullscreen-container {
+      width: 100vw;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      overflow: hidden;
     }
 
-    .svg-container {
+    .fullscreen-container img {
       width: 100%;
-      max-width: 900px;
-      padding: 10px;
-    }
-
-    .svg-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      height: 100%;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <div class="svg-container">
-    <img src="11111111``22-01.svg" alt="Первая страница документа">
+  <div class="fullscreen-container">
+    <img src="11111111``22-01.svg" alt="Документ">
   </div>
 </body>
 </html>
