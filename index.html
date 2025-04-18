@@ -2,26 +2,37 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Полноэкранный SVG</title>
+  <title>Документ без полей</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
       background-color: #fff;
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
-    object {
-      width: 100vw;
-      height: 100vh;
+    .svg-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh;
+    }
+
+    .svg-wrapper object {
+      width: 100%;
+      height: auto;
       display: block;
-      border: none;
+      max-width: 100%;
     }
   </style>
 </head>
 <body>
-  <object data="11111111``22-01.svg" type="image/svg+xml"></object>
+  <div class="svg-wrapper">
+    <object data="11111111``22-01.svg" type="image/svg+xml"></object>
+  </div>
 </body>
 </html>
