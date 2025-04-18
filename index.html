@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Масштабируемый SVG</title>
+  <title>Адаптивный SVG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
@@ -25,10 +25,24 @@
     }
 
     object {
-      height: 100vh;         /* по высоте экрана */
-      width: auto;           /* ширина подгоняется пропорционально */
       display: block;
       border: none;
+    }
+
+    /* 📱 Телефоны: масштаб по высоте */
+    @media (max-width: 768px) {
+      object {
+        height: 100vh;
+        width: auto;
+      }
+    }
+
+    /* 💻 Десктопы: масштаб по ширине */
+    @media (min-width: 769px) {
+      object {
+        width: 100vw;
+        height: auto;
+      }
     }
   </style>
 </head>
