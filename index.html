@@ -2,35 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Документ на весь экран</title>
+  <title>Полноэкранный документ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #f0f0f0;
-    }
-
-    .fullscreen-container {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background: #fff;
       overflow: hidden;
     }
 
-    .fullscreen-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <div class="fullscreen-container">
-    <img src="11111111``22-01.svg" alt="Документ">
-  </div>
+  <img src="11111111``22-01.svg" alt="Документ">
 </body>
 </html>
