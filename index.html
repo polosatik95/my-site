@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Полноценный документ</title>
+  <title>Масштабируемый SVG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
@@ -25,9 +25,9 @@
     }
 
     object {
+      height: 100vh;         /* по высоте экрана */
+      width: auto;           /* ширина подгоняется пропорционально */
       display: block;
-      min-width: 100vw;
-      min-height: 100vh;
       border: none;
     }
   </style>
