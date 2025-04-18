@@ -2,28 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Полноэкранный документ</title>
+  <title>Полноэкранный SVG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: #fff;
       overflow: hidden;
+      background-color: #fff;
     }
 
-    img {
-      position: fixed;
-      top: 0;
-      left: 0;
+    object {
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
+      display: block;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <img src="11111111``22-01.svg" alt="Документ">
+  <object data="11111111``22-01.svg" type="image/svg+xml"></object>
 </body>
 </html>
