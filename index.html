@@ -5,34 +5,33 @@
   <title>Документ без полей</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #fff;
-      height: 100%;
-      width: 100%;
-      overflow-x: hidden;
-      overflow-y: auto;
+      box-sizing: border-box;
     }
 
-    .svg-wrapper {
+    html, body {
+      height: 100%;
+      background-color: #fff;
+      overflow: auto;
+    }
+
+    body {
       display: flex;
       justify-content: center;
       align-items: start;
-      min-height: 100vh;
     }
 
-    .svg-wrapper object {
-      width: 100%;
-      height: auto;
+    object {
       display: block;
-      max-width: 100%;
+      width: 100vw;
+      height: auto;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="svg-wrapper">
-    <object data="11111111``22-01.svg" type="image/svg+xml"></object>
-  </div>
+  <object data="11111111``22-01.svg" type="image/svg+xml"></object>
 </body>
 </html>
